@@ -1,0 +1,113 @@
+name: Book
+description: Track a Book.
+title: "[Book Title]"
+labels:
+  - ":blue_book: Book"
+assignees:
+  - ndouglas
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this form to track a new book.
+
+  - type: input
+    id: title
+    attributes:
+      label: Book Title
+      description: What is the title of the book you're planning to read?
+      placeholder: e.g., The Art of Computer Programming
+    validations:
+      required: true
+
+  - type: textarea
+    id: author
+    attributes:
+      label: Author(s)
+      description: Who authored the book?
+      placeholder: e.g., Donald E. Knuth
+    validations:
+      required: true
+
+  - type: textarea
+    id: cover_image
+    attributes:
+      label: Cover Image
+      description: Provide a URL to the cover image of the book.
+      placeholder: e.g., https://example.com/book-cover.jpg
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of the book and why it interests you.
+      placeholder: Describe the book and its significance to your development.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What type of book is this?
+      options:
+        - Textbook
+        - Reference
+        - Essay
+        - Fiction
+        - Project
+      default: 0
+
+  - type: dropdown
+    id: subject
+    attributes:
+      label: Subject
+      description: What subject does this book cover?
+      options:
+        - Agile
+        - API Design & Development
+        - Artificial Intelligence
+        - Cloud Computing
+        - Code Quality
+        - Computer Science
+        - Data Structures and Algorithms
+        - Database Design & Development
+        - Design
+        - DevOps Theory
+        - DevOps Tools
+        - Distributed Systems
+        - Game Design
+        - Game Development
+        - General Programming
+        - Hardware
+        - Machine Learning
+        - Mathematics
+        - Miscellaneous
+        - Mobile Development
+        - Networking
+        - Programming Languages
+        - Security
+        - Software Architecture
+        - Test Automation
+        - Web Development
+      default: 0
+
+  - type: input
+    id: target_date
+    attributes:
+      label: Target Date for Completion
+      description: When do you plan to finish reading this book?
+      placeholder: MM/DD/YYYY
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional notes, questions, or thoughts about this book.
+      placeholder: Feel free to share any additional thoughts or questions here.
+    validations:
+      required: false

@@ -1,5 +1,5 @@
 name: Certification
-description: Track a Certification goal.
+description: Track a Certification.
 title: "[Certification Name]"
 labels:
   - ":scroll: Certification"
