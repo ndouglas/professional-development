@@ -38,15 +38,6 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: description
-    attributes:
-      label: Description
-      description: Provide a brief description of the book and why it interests you.
-      placeholder: Describe the book and its significance to your development.
-    validations:
-      required: true
-
   - type: dropdown
     id: type
     attributes:
@@ -77,6 +68,15 @@ body:
       placeholder: MM/DD/YYYY
     validations:
       required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of the book and why it interests you.
+      placeholder: Describe the book and its significance to your development.
+    validations:
+      required: true
 
   - type: textarea
     id: notes
