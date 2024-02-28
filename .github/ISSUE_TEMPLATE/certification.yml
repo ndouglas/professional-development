@@ -49,7 +49,7 @@ body:
         - Hands-On
         - Written
         - Other
-    default: 0
+      default: 0
     validations:
       required: true
 
