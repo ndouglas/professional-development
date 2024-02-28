@@ -1,0 +1,115 @@
+name: Course
+description: Track a Course.
+title: "[Course Title]"
+labels:
+  - ":mortar_board: Course"
+assignees:
+  - ndouglas
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this form to track a new course.
+
+  - type: input
+    id: title
+    attributes:
+      label: Course Title
+      description: What is the title of the course you're planning to take?
+      placeholder: e.g., Machine Learning with Python
+    validations:
+      required: true
+
+  - type: textarea
+    id: instructor
+    attributes:
+      label: Instructor(s)
+      description: Who is instructing the course?
+      placeholder: e.g., Andrew Ng
+    validations:
+      required: true
+
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: On which platform is the course offered?
+      options:
+        - Udemy
+        - Coursera
+      default: 0
+
+  - type: textarea
+    id: course_link
+    attributes:
+      label: Course Link
+      description: Provide a URL to the course.
+      placeholder: e.g., https://www.coursera.org/learn/machine-learning
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of the course and why it interests you.
+      placeholder: Describe the course content and its significance to your development.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subject
+    attributes:
+      label: Subject
+      description: What subject does this course cover?
+      options:
+        - Agile Methodologies
+        - Artificial Intelligence
+        - Cloud Computing
+        - Data Science
+        - DevOps
+        - Game Development
+        - Machine Learning
+        - Mobile App Development
+        - Programming Languages
+        - Software Engineering
+        - Web Development
+        - Other
+      default: 0
+
+  - type: input
+    id: duration
+    attributes:
+      label: Duration
+      description: What is the estimated duration of the course (in hours or weeks)?
+      placeholder: e.g., 20 hours, 4 weeks
+    validations:
+      required: false
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Start Date
+      description: When do you plan to start the course?
+      placeholder: MM/DD/YYYY
+    validations:
+      required: false
+
+  - type: input
+    id: target_completion_date
+    attributes:
+      label: Target Date for Completion
+      description: When do you plan to finish the course?
+      placeholder: MM/DD/YYYY
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional notes, questions, or thoughts about this course.
+      placeholder: Feel free to share any additional thoughts or questions here.
+    validations:
+      required: false
