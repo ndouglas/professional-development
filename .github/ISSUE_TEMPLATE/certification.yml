@@ -3,8 +3,8 @@ description: Track a Certification goal.
 title: "[Certification Name]"
 labels:
   - ":scroll: Certification"
-assignees: @ndouglas
-
+assignees:
+  - ndouglas
 body:
   - type: markdown
     attributes:
