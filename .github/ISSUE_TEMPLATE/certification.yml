@@ -77,15 +77,6 @@ body:
         ## Relevant Links
 
   - type: input
-    id: courses
-    attributes:
-      label: Courses
-      description: URLs or ticket numbers for any courses you plan to take.
-      placeholder: https://
-    validations:
-      required: true
-
-  - type: input
     id: official_page
     attributes:
       label: Official Certification Page
@@ -95,15 +86,6 @@ body:
       required: true
 
   - type: input
-    id: study_resources
-    attributes:
-      label: Study Resources
-      description: URLs to study guides or resources.
-      placeholder: https://
-    validations:
-      required: false
-
-  - type: input
     id: exam_registration
     attributes:
       label: Exam Registration
@@ -111,6 +93,24 @@ body:
       placeholder: https://
     validations:
       required: true
+
+  - type: textarea
+    id: courses
+    attributes:
+      label: Courses
+      description: URLs or ticket numbers for any courses you plan to take.
+      placeholder: e.g., [Udemy Course](https://www.udemy.com/course/kubernetes-certification/)
+    validations:
+      required: true
+
+  - type: textarea
+    id: study_resources
+    attributes:
+      label: Study Resources
+      description: URLs to study guides or resources.
+      placeholder: e.g., [Kubernetes Docs](https://kubernetes.io/docs/home/)
+    validations:
+      required: false
 
   - type: textarea
     id: preparation_plan
