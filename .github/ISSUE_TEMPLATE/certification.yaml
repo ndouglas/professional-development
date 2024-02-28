@@ -1,0 +1,131 @@
+name: Certification
+description: Track a Certification goal.
+title: "[Certification Name]"
+labels:
+  - ":scroll: Certification"
+assignees: @ndouglas
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this form to track a new certification goal.
+
+  - type: input
+    id: name
+    attributes:
+      label: Certification Name
+      description: What is the name of the certification you're pursuing?
+      placeholder: e.g., Certified Kubernetes Administrator (CKA)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of the certification and its relevance to your goals.
+      placeholder: Describe the certification and why it's important for your development.
+    validations:
+      required: true
+
+  - type: input
+    id: cost
+    attributes:
+      label: Cost
+      description: What is the cost of the certification exam?
+      placeholder: e.g., $300
+    validations:
+      required: true
+
+  - type: dropdown
+    id: test_type
+    attributes:
+      label: Test Type
+      description: Describe the type of test.
+      options:
+        - Multiple-Choice
+        - Simulator
+        - Hands-On
+        - Written
+        - Other
+    default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: number_of_retakes
+    attributes:
+      label: Number of Retakes Allowed
+      description: Information on the number of retakes allowed and any conditions.
+      placeholder: e.g., 2 retakes allowed within one year of the first attempt
+    validations:
+      required: true
+
+  - type: input
+    id: target_date
+    attributes:
+      label: Target Date
+      description: When do you plan to take or retake the certification exam?
+      placeholder: MM/DD/YYYY
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Relevant Links
+
+  - type: input
+    id: courses
+    attributes:
+      label: Courses
+      description: URLs or ticket numbers for any courses you plan to take.
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: input
+    id: official_page
+    attributes:
+      label: Official Certification Page
+      description: URL to the official certification page.
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: input
+    id: study_resources
+    attributes:
+      label: Study Resources
+      description: URLs to study guides or resources.
+      placeholder: https://
+    validations:
+      required: false
+
+  - type: input
+    id: exam_registration
+    attributes:
+      label: Exam Registration
+      description: URL to exam registration page.
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: textarea
+    id: preparation_plan
+    attributes:
+      label: Preparation Plan
+      description: Outline your study plan, including resources and a schedule if applicable.
+      placeholder: Detail your preparation strategy, including any courses, practice exams, or reading materials.
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional notes, questions, or ideas about this certification.
+      placeholder: Feel free to share any additional thoughts or questions here.
+    validations:
+      required: false
