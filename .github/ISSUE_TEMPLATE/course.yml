@@ -58,25 +58,14 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: input
     id: subject
     attributes:
       label: Subject
       description: What subject does this course cover?
-      options:
-        - Agile Methodologies
-        - Artificial Intelligence
-        - Cloud Computing
-        - Data Science
-        - DevOps
-        - Game Development
-        - Machine Learning
-        - Mobile App Development
-        - Programming Languages
-        - Software Engineering
-        - Web Development
-        - Other
-      default: 0
+      placeholder: e.g., Machine Learning
+    validations:
+      required: true
 
   - type: input
     id: duration

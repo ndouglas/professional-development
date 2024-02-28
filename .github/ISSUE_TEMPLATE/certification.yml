@@ -30,6 +30,15 @@ body:
       required: true
 
   - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: What subject does this certification cover?
+      placeholder: e.g., Kubernetes
+    validations:
+      required: true
+
+  - type: input
     id: cost
     attributes:
       label: Cost

@@ -60,39 +60,14 @@ body:
         - Project
       default: 0
 
-  - type: dropdown
+  - type: input
     id: subject
     attributes:
       label: Subject
       description: What subject does this book cover?
-      options:
-        - Agile
-        - API Design & Development
-        - Artificial Intelligence
-        - Cloud Computing
-        - Code Quality
-        - Computer Science
-        - Data Structures and Algorithms
-        - Database Design & Development
-        - Design
-        - DevOps Theory
-        - DevOps Tools
-        - Distributed Systems
-        - Game Design
-        - Game Development
-        - General Programming
-        - Hardware
-        - Machine Learning
-        - Mathematics
-        - Miscellaneous
-        - Mobile Development
-        - Networking
-        - Programming Languages
-        - Security
-        - Software Architecture
-        - Test Automation
-        - Web Development
-      default: 0
+      placeholder: e.g., Machine Learning
+    validations:
+      required: true
 
   - type: input
     id: target_date
