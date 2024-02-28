@@ -20,7 +20,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: instructor
     attributes:
       label: Instructor(s)
@@ -28,7 +28,6 @@ body:
       placeholder: e.g., Andrew Ng
     validations:
       required: true
-
 
   - type: dropdown
     id: platform
@@ -40,21 +39,12 @@ body:
         - Coursera
       default: 0
 
-  - type: textarea
+  - type: input
     id: course_link
     attributes:
       label: Course Link
       description: Provide a URL to the course.
       placeholder: e.g., https://www.coursera.org/learn/machine-learning
-    validations:
-      required: true
-
-  - type: textarea
-    id: description
-    attributes:
-      label: Description
-      description: Provide a brief description of the course and why it interests you.
-      placeholder: Describe the course content and its significance to your development.
     validations:
       required: true
 
@@ -75,6 +65,15 @@ body:
       placeholder: e.g., 20 hours, 4 weeks
     validations:
       required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of the course and why it interests you.
+      placeholder: Describe the course content and its significance to your development.
+    validations:
+      required: true
 
   - type: input
     id: start_date
